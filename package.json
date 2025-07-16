@@ -1,0 +1,25 @@
+{
+  "name": "zync-chat",
+  "version": "1.0.0",
+  "description": "ZYNC - Real-time chat application with WebSocket support",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "chat",
+    "websocket",
+    "real-time",
+    "messaging"
+  ],
+  "author": "ZYNC Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
